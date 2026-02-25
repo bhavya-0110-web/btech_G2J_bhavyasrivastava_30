@@ -1,0 +1,18 @@
+#include<stdio.h>
+//add two numbers using function 
+int add(int a,int b);
+int main()
+{
+int x,y,z;
+printf("enter two numbers");
+scanf("%d%d",&x,&y);
+z= add(x,y);
+printf("addition=%d",z);
+return 0;
+}
+int add(int a,int b)
+{
+    int c;
+    c= a+b;
+    return c;
+}
