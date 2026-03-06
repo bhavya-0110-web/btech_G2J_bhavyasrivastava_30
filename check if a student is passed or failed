@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    float marks;
+    printf("enter marks");
+    scanf("%f",&marks);
+    if(marks>=30&& marks<=100)
+    {
+        printf("passed");
+   
+    }
+    else if(marks<30 && marks>=0)
+       { 
+           printf("failed");
+           
+       }
+    
+    else{
+        printf("wrong marks");
+    }
+    return 0;
+}
