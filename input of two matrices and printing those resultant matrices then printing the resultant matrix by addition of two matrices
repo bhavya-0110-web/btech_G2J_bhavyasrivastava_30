@@ -1,0 +1,63 @@
+#include<stdio.h>
+int main()
+{
+    int a[20][10],b[20][10],i,j,r1,r2,c1,c2,k[30][30];
+    printf("enter number of columns for first matrix:");
+    scanf("%d%d",&r1,&c1);
+    printf("enter number of rows and columns for second matrix:");
+    scanf("%d%d",&r2,&c2);
+    if(r1!=r2&&c1!=c2)
+    {
+        printf("addition is not possible");
+    }
+    else 
+   { printf("elements of first matrix a are:");
+    for(i=0;i<r1;i++)
+    {
+        for(j=0;j<c1;j++)
+        {
+            printf("enter a[%d][%d]:\n",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("the resultant matrix a is:\n");
+    for(i=0;i<r1;i++)
+    {
+        for(j=0;j<c1;j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+     printf("the elements of second matrix b are:\n");
+     for(i=0;i<r2;i++)
+     {
+         for(j=0;j<c2;j++)
+         {
+             printf("b[%d][%d]:\n",i,j);
+             scanf("%d",&b[i][j]);
+         }
+     }
+     printf("the resultant second matrix b is:\n");
+     for(i=0;i<r2;i++)
+     {
+         for(j=0;j<c2;j++)
+         {
+             printf("%d\t",b[i][j]);
+         }
+         printf("\n");
+     } 
+     printf("the matrix formed by addition of matrix a and matrix b:\n");
+     for(i=0;i<r1&&i<r2;i++)
+     {
+         for(j=0;j<c1&&j<c2;j++)
+         {
+             k[i][j]=a[i][j] +b[i][j] ;
+             scanf("k[%d][%d]",&k[i][j]);
+            printf("%d\t",k[i][j]);
+         }
+         printf("\n");
+     }
+   }
+   return 0;
+    }
