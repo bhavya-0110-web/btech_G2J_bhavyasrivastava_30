@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,ith_mult;
+    printf("enter a number:");
+    scanf("%d",&n);
+    i=1;
+    for(i=1;i<=10;i++)
+    {
+        ith_mult = n*i;
+        printf("%d\n",ith_mult);
+    }
+    return 0;
+}
