@@ -1,0 +1,25 @@
+#include<stdio.h>
+void greet1 ();
+void greet2 ();
+int main()
+{   char lang,i,f;
+    printf("enter i if indian or f for french:\n");
+    scanf("%c",&lang);
+    if(lang=='i')
+    {
+        greet1 ();
+    }
+    else
+    {
+        greet2 ();
+    }
+    return 0;
+}
+void greet1 ()
+{
+    printf("namaste");
+}
+void greet2 ()
+{
+    printf("bonjour");
+}
