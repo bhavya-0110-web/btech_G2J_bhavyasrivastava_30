@@ -1,0 +1,19 @@
+#include<stdio.h>
+int swap(int a, int b);
+int main()
+{
+    int a,b;
+    printf("enter two numbers a and b\n");
+    scanf("%d%d",&a,&b);
+    printf("a=%d\n b=%d\n",a,b);
+    swap(a,b);
+    return 0;
+}
+int swap(int a, int b)
+{
+    int t;
+    t=a;
+    a=b;
+    b=t;
+    printf("new value of a and b are:\na=%d\n b=%d",a,b);
+}
