@@ -1,0 +1,18 @@
+#include<stdio.h>
+int arth(int a,int b,int *sum,int *mul ,float *avg);
+int main()
+{
+    int a,b,sum,mul;
+    float avg;
+    printf("enter two numbers");
+    scanf("%d%d",&a,&b);
+    arth(a,b,&sum,&mul,&avg);
+    printf("sum is:%d\nproduct is:%d\naverage is:%f",sum,mul,avg);
+}
+int arth(int a,int b,int *sum,int *mul ,float *avg)
+{
+    *sum=a+b;
+    *mul=a*b;
+    *avg=(a+b)/2;
+    
+}
